@@ -8,7 +8,8 @@ import { IStreamTypeEnum } from '@/apis/room'
 
 import './index.less'
 
-const licenseUrl = 'https://license.vod2.myqcloud.com/license/v2/1312738076_1/v_cube.license'
+
+const licenseUrl = `${import.meta.env.VITE_LICENCE_URL as string}`
 
 interface ITCPlayer {
   url: string
