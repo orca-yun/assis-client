@@ -1,0 +1,72 @@
+.order-module__wrapper {
+  height: 100%;
+  background-color: #FFF;
+  padding: 10px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+
+  &-header {
+    flex: 0 0 auto;
+  }
+
+  &-content {
+    flex: 1 0 0;
+    display: flex;
+    flex-direction: column;
+
+    .ant-card-head {
+      flex: 0 0 auto;
+    }
+
+    .ant-card-body {
+      flex: 1 0 0;
+      padding: 0;
+
+      .empty-hint-wrapper {
+        height: 100%;
+        padding: 0;
+      }
+    }
+  }
+
+  .order-data__module {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: inherit;
+    padding: 0px;
+    box-sizing: border-box;
+
+    .ant-card {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+
+      .ant-card-head {
+        flex: 0 0 auto;
+      }
+
+      .ant-card-body {
+        flex: 1 0 0;
+        padding: 0;
+
+        .table-wrapper {
+          height: 100%;
+        }
+      }
+    }
+
+    .order-table__goodsName {
+      display: flex;
+      align-items: center;
+
+      img {
+        margin-right: 4px;
+      }
+    }
+  }
+}

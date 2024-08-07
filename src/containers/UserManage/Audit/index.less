@@ -1,0 +1,17 @@
+.un-audit-msg-list {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+
+  .list-wrapper {
+    flex: 1 0 0;
+    height: 1px;
+    overflow-y: auto;
+
+    .chat-item {
+      &:not(:last-child) {
+        margin-bottom: 12px;
+      }
+    }
+  }
+}

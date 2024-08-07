@@ -1,0 +1,30 @@
+.orca-ass-control-page {
+  padding: 0 10px 10px 10px;
+  height: 100%;
+  min-width: 1080px;
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: 1fr 1.5fr 1fr;
+  //grid-template-rows: 1fr;
+  grid-column-gap: 10px;
+  grid-row-gap: 8px;
+
+  .audience-list-panel {
+    grid-column-start: 1;
+    grid-column-end: 4;
+  }
+
+  .broadcast-video-wrapper {
+    background: #FFFFFF;
+  }
+
+  &__left {
+    display: flex;
+    flex-direction: column;
+
+    .chat-manage-panel {
+      margin-top: 12px;
+      flex: 1 0 0;
+    }
+  }
+}

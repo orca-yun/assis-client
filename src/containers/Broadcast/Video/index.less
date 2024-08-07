@@ -1,0 +1,103 @@
+.orca-video-player {
+  width: 100%;
+  padding-top: 56.25%;
+  position: relative;
+
+  .unstart-tip {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    color: grey;
+  }
+
+  &__item {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+
+    &:not(.tcplay) {
+      &.video-js .vjs-big-play-button {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+
+      .vjs-error-display {
+        display: none;
+      }
+
+      .vjs-progress-control.vjs-control {
+        pointer-events: none;
+      }
+    }
+  }
+
+  &__mask {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    background: rgb(38, 37, 37);
+    color: #FFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .error {
+      margin-bottom: 24px;
+      text-align: center;
+      width: 80%;
+    }
+
+    .video-tip {
+      background: transparent;
+      font-size: 24px;
+      color: grey;
+      cursor: pointer;
+    }
+  }
+
+  .customize-control-panel {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.switch-route-tip {
+  color: #333;
+
+  li {
+    &.selected {
+      font-weight: 500;
+      color: #adaabb;
+    }
+
+    &:hover {
+      font-weight: 500;
+      color: #adaabb;
+    }
+  }
+
+  li:not(:last-child) {
+    margin-bottom: 12px;
+  }
+}

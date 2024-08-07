@@ -1,0 +1,39 @@
+.user-manage-panel {
+  background: #FFF;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  overflow: hidden;
+
+  .ant-tabs {
+    flex: 0 0 auto;
+    background: #F5F7FA;
+
+    .ant-tabs-nav {
+      margin: 0;
+
+      .ant-tabs-tab {
+        margin: 0;
+        // padding: 23px 24px 12px;
+        padding: 12px 20px 12px;
+        box-shadow: -1px 0 0 0 #E4E7ED;
+        color: #909399;;
+        font-size: 16px;
+
+        &.ant-tabs-tab-active {
+          color: #409EFF;
+        }
+      }
+
+      .ant-tabs-ink-bar {
+        display: none;
+      }
+    }
+  }
+
+  &__content {
+    flex: 1 0 0;
+    height: 1px;
+    padding: 10px;
+  }
+}

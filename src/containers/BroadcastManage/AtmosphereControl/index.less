@@ -1,0 +1,29 @@
+.atmosphere-control {
+  height: 100%;
+  background: #FFF;
+  box-sizing: border-box;
+  padding: 10px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+
+  .ant-tabs-nav {
+    &::before {
+      border: none;
+    }
+  }
+
+  .ant-tabs-nav {
+    margin: 0;
+
+    .ant-tabs-tab {
+      padding: 0 0 6px;
+    }
+  }
+
+  &__content {
+    flex: 1 0 0;
+    min-height: 0;
+    overflow-y: auto;
+  }
+}
